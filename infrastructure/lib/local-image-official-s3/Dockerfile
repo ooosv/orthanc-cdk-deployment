@@ -39,8 +39,8 @@ RUN chown -R orthanc /usr/share/orthanc
 RUN chown -R orthanc:orthanc /usr/share/orthanc/plugins-available
 
 # Add custom script that can remove S3 plugin if necessary
-COPY custom-script.sh /tmp
-RUN chown -R orthanc /tmp
-RUN chmod +x /tmp/custom-script.sh
+# COPY custom-script.sh /tmp
+# RUN chown -R orthanc /tmp
+# RUN chmod +x /tmp/custom-script.sh
 
 #USER orthanc
